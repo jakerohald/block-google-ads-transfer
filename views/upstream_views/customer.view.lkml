@@ -16,7 +16,7 @@ view: customer{
     ]
     convert_tz: no
     datatype: date
-    sql: ${TABLE}._DATA_DATE ;;
+    sql: ${TABLE}._data_date ;;
   }
 
   dimension_group: _latest {
@@ -32,7 +32,7 @@ view: customer{
     ]
     convert_tz: no
     datatype: date
-    sql: ${TABLE}._LATEST_DATE ;;
+    sql: ${TABLE}._latest_date ;;
   }
 
   dimension: latest {
@@ -44,53 +44,53 @@ view: customer{
 
   dimension: account_currency_code {
     type: string
-    sql: ${TABLE}.AccountCurrencyCode ;;
+    sql: ${TABLE}.account_currency_code ;;
   }
 
   dimension: account_descriptive_name {
     type: string
-    sql: ${TABLE}.AccountDescriptiveName ;;
+    sql: ${TABLE}.account_descriptive_name ;;
   }
 
   dimension: account_time_zone {
     type: string
-    sql: ${TABLE}.AccountTimeZone ;;
+    sql: ${TABLE}.account_time_zone ;;
   }
 
   dimension: account_time_zone_id {
     type: string
-    sql: ${TABLE}.AccountTimeZoneId ;;
+    sql: ${TABLE}.account_time_zone_id ;;
   }
 
   dimension: can_manage_clients {
     type: yesno
-    sql: ${TABLE}.CanManageClients ;;
+    sql: ${TABLE}.can_manage_clients ;;
   }
 
   dimension: customer_descriptive_name {
     drill_fields: [campaign.campaign_name]
     type: string
-    sql: ${TABLE}.CustomerDescriptiveName ;;
+    sql: ${TABLE}.customer_descriptive_name ;;
   }
 
   dimension: external_customer_id {
     type: number
-    sql: ${TABLE}.ExternalCustomerId ;;
+    sql: ${TABLE}.external_customer_id ;;
   }
 
   dimension: is_auto_tagging_enabled {
     type: yesno
-    sql: ${TABLE}.IsAutoTaggingEnabled ;;
+    sql: ${TABLE}.is_auto_tagging_enabled ;;
   }
 
   dimension: is_test_account {
     type: yesno
-    sql: ${TABLE}.IsTestAccount ;;
+    sql: ${TABLE}.is_test_account ;;
   }
 
   dimension: primary_company_name {
     type: string
-    sql: ${TABLE}.PrimaryCompanyName ;;
+    sql: ${TABLE}.primary_company_name ;;
   }
 
   measure: count {

@@ -14,7 +14,7 @@ view: ad_basic_stats {
   dimension: _date {
     hidden: yes
     type: date
-    sql: ${TABLE}._DATA_DATE ;;
+    sql: ${TABLE}._data_date ;;
   }
 
   dimension_group: _data {
@@ -30,7 +30,7 @@ view: ad_basic_stats {
     ]
     convert_tz: no
     datatype: date
-    sql: ${TABLE}._DATA_DATE ;;
+    sql: ${TABLE}._data_date ;;
   }
 
   dimension_group: _latest {
@@ -46,7 +46,7 @@ view: ad_basic_stats {
     ]
     convert_tz: no
     datatype: date
-    sql: ${TABLE}._LATEST_DATE ;;
+    sql: ${TABLE}._latest_date ;;
   }
 
   dimension: latest {
@@ -57,77 +57,77 @@ view: ad_basic_stats {
 
   dimension: active_view_impressions {
     type: number
-    sql: ${TABLE}.ActiveViewImpressions ;;
+    sql: ${TABLE}.active_view_impressions ;;
   }
 
   dimension: active_view_measurability {
     type: number
-    sql: ${TABLE}.ActiveViewMeasurability ;;
+    sql: ${TABLE}.active_view_measurability ;;
   }
 
   dimension: active_view_measurable_cost {
     type: number
-    sql: ${TABLE}.ActiveViewMeasurableCost ;;
+    sql: ${TABLE}.active_view_measurable_cost ;;
   }
 
   dimension: active_view_measurable_impressions {
     type: number
-    sql: ${TABLE}.ActiveViewMeasurableImpressions ;;
+    sql: ${TABLE}.active_view_measurable_impressions ;;
   }
 
   dimension: active_view_viewability {
     type: number
-    sql: ${TABLE}.ActiveViewViewability ;;
+    sql: ${TABLE}.active_view_viewability ;;
   }
 
   dimension: ad_group_id {
     type: number
-    sql: ${TABLE}.AdGroupId ;;
+    sql: ${TABLE}.ad_group_id ;;
   }
 
   dimension: ad_network_type1 {
     type: string
-    sql: ${TABLE}.AdNetworkType1 ;;
+    sql: ${TABLE}.ad_network_type1 ;;
   }
 
   dimension: ad_network_type2 {
     type: string
-    sql: ${TABLE}.AdNetworkType2 ;;
+    sql: ${TABLE}.ad_network_type2 ;;
   }
 
   dimension: average_position {
     type: number
-    sql: ${TABLE}.AveragePosition ;;
+    sql: ${TABLE}.average_position ;;
   }
 
   dimension: base_ad_group_id {
     type: number
-    sql: ${TABLE}.BaseAdGroupId ;;
+    sql: ${TABLE}.base_ad_group_id ;;
   }
 
   dimension: base_campaign_id {
     type: number
-    sql: ${TABLE}.BaseCampaignId ;;
+    sql: ${TABLE}.base_campaign_id ;;
   }
 
   dimension: campaign_id {
     type: number
-    sql: ${TABLE}.CampaignId ;;
+    sql: ${TABLE}.campaign_id ;;
   }
 
   dimension: clicks {
     type: number
-    sql: ${TABLE}.Clicks ;;
+    sql: ${TABLE}.clicks ;;
   }
 
   dimension: conversion_value {
     type: number
-    sql: ${TABLE}.ConversionValue ;;
+    sql: ${TABLE}.conversion_value ;;
   }
 
   dimension: conversions {
     type: number
-    sql: ${TABLE}.Conversions ;;
+    sql: ${TABLE}.conversions ;;
   }
 
   dimension: cost {
@@ -137,17 +137,17 @@ view: ad_basic_stats {
 
   dimension: creative_id {
     type: number
-    sql: ${TABLE}.CreativeId ;;
+    sql: ${TABLE}.creative_id ;;
   }
 
   dimension: criterion_id {
     type: number
-    sql: ${TABLE}.CriterionId ;;
+    sql: ${TABLE}.criterion_id ;;
   }
 
   dimension: criterion_type {
     type: string
-    sql: ${TABLE}.CriterionType ;;
+    sql: ${TABLE}.criterion_type ;;
   }
 
   dimension_group: date {
@@ -165,46 +165,46 @@ view: ad_basic_stats {
     ]
     convert_tz: no
     datatype: date
-    sql: ${TABLE}.Date ;;
+    sql: ${TABLE}.date ;;
   }
 
   dimension: device {
     type: string
-    sql: ${TABLE}.Device ;;
+    sql: ${TABLE}.device ;;
   }
 
   dimension: external_customer_id {
     type: number
-    sql: ${TABLE}.ExternalCustomerId ;;
+    sql: ${TABLE}.external_customer_id ;;
   }
 
   dimension: impressions {
     type: number
-    sql: ${TABLE}.Impressions ;;
+    sql: ${TABLE}.impressions ;;
   }
 
   dimension: interaction_types {
     type: string
-    sql: ${TABLE}.InteractionTypes ;;
+    sql: ${TABLE}.interaction_types ;;
   }
 
   dimension: interactions {
     type: number
-    sql: ${TABLE}.Interactions ;;
+    sql: ${TABLE}.interactions ;;
   }
 
   dimension: is_negative {
     type: yesno
-    sql: ${TABLE}.IsNegative ;;
+    sql: ${TABLE}.is_negative ;;
   }
 
   dimension: slot {
     type: string
-    sql: ${TABLE}.Slot ;;
+    sql: ${TABLE}.slot ;;
   }
 
   dimension: view_through_conversions {
     type: number
-    sql: ${TABLE}.ViewThroughConversions ;;
+    sql: ${TABLE}.view_through_conversions ;;
   }
 }
