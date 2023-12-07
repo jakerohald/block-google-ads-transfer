@@ -1,5 +1,5 @@
 view: ad {
-  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.Ad_@{GOOGLE_ADS_CUSTOMER_ID}` ;;
+  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.@{GOOGLE_ADS_TABLE_PREFIX}Ad_@{GOOGLE_ADS_CUSTOMER_ID}` ;;
 
   dimension: primary_key {
     primary_key: yes

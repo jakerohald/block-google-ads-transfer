@@ -1,7 +1,7 @@
 include: /views/shared_views/*
 
 view: customer{
-  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.Customer_@{GOOGLE_ADS_CUSTOMER_ID}` ;;
+  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.@{GOOGLE_ADS_TABLE_PREFIX}Customer_@{GOOGLE_ADS_CUSTOMER_ID}` ;;
 
   dimension_group: _data {
     hidden: yes
