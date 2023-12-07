@@ -16,8 +16,11 @@
       "label": "Google Ads Schema Name"
     },
     "GOOGLE_ADS_CUSTOMER_ID": {
-    "label": "Customer ID from Google Ads"
-    }
+      "label": "Customer ID from Google Ads"
+    },
+    "GOOGLE_ADS_TABLE_PREFIX": {
+      "label": "Google Ads Tables Prefix"
+    }    
   },
   "models": [
     {
