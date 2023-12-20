@@ -154,10 +154,10 @@ view: keyword {
     sql: ${TABLE}.estimated_add_cost_at_first_position_cpc ;;
   }
 
-  dimension: external_customer_id {
+  dimension: customer_id {
     hidden: yes
     type: number
-    sql: ${TABLE}.external_customer_id ;;
+    sql: ${TABLE}.customer_id ;;
   }
 
   dimension: final_app_urls {

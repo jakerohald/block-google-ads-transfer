@@ -21,7 +21,7 @@ explore: ad_basic_stats {
     from: ad_stats
     view_label: "Ad Performance (Last Period)"
     sql_on:
-      ${fact.external_customer_id} = ${last_fact.external_customer_id} AND
+      ${fact.customer_id} = ${last_fact.customer_id} AND
       ${fact.campaign_id} = ${last_fact.campaign_id} AND
       ${fact.ad_group_id} = ${last_fact.ad_group_id} AND
       ${fact.criterion_id} = ${last_fact.criterion_id} AND
@@ -37,7 +37,7 @@ explore: ad_basic_stats {
     sql_on: ${fact.creative_id} = ${ad.creative_id} AND
       ${fact.ad_group_id} = ${ad.ad_group_id} AND
       ${fact.campaign_id} = ${ad.campaign_id} AND
-      ${fact.external_customer_id} = ${ad.external_customer_id} AND
+      ${fact.customer_id} = ${ad.customer_id} AND
       ${ad.latest} ;;
     relationship:  many_to_one
   }
@@ -48,7 +48,7 @@ explore: ad_basic_stats {
     view_label: "Ad Groups"
     sql_on: ${fact.ad_group_id} = ${ad_group.ad_group_id} AND
       ${fact.campaign_id} = ${ad_group.campaign_id} AND
-      ${fact.external_customer_id} = ${ad_group.external_customer_id} AND
+      ${fact.customer_id} = ${ad_group.customer_id} AND
       ${ad_group.latest} ;;
     relationship: many_to_one
   }
@@ -60,14 +60,14 @@ explore: ad_basic_stats {
     sql_on: ${fact.criterion_id} = ${keyword.criterion_id} AND
             ${fact.ad_group_id} = ${keyword.ad_group_id} AND
             ${fact.campaign_id} = ${keyword.campaign_id} AND
-            ${fact.external_customer_id} = ${keyword.external_customer_id} AND
+            ${fact.customer_id} = ${keyword.customer_id} AND
             ${keyword.latest} ;;
     relationship: many_to_one
   }
 
   join: customer {
     view_label: "Customer"
-    sql_on: ${fact.external_customer_id} = ${customer.external_customer_id} AND
+    sql_on: ${fact.customer_id} = ${customer.customer_id} AND
       ${customer.latest} ;;
     relationship: many_to_one
   }
@@ -75,7 +75,7 @@ explore: ad_basic_stats {
   join: campaign {
     view_label: "Campaign"
     sql_on: ${fact.campaign_id} = ${campaign.campaign_id} AND
-      ${fact.external_customer_id} = ${campaign.external_customer_id} AND
+      ${fact.customer_id} = ${campaign.customer_id} AND
       ${campaign.latest};;
     relationship: many_to_one
   }
