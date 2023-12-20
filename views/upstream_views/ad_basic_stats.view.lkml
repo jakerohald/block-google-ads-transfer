@@ -173,9 +173,9 @@ view: ad_basic_stats {
     sql: ${TABLE}.device ;;
   }
 
-  dimension: external_customer_id {
+  dimension: customer_id {
     type: number
-    sql: ${TABLE}.external_customer_id ;;
+    sql: ${TABLE}.customer_id ;;
   }
 
   dimension: impressions {

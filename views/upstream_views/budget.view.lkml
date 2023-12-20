@@ -72,9 +72,9 @@ dimension: prim_key {
     sql: ${TABLE}.delivery_method ;;
   }
 
-  dimension: external_customer_id {
+  dimension: customer_id {
     type: number
-    sql: ${TABLE}.external_customer_id ;;
+    sql: ${TABLE}.customer_id ;;
   }
 
   dimension: has_recommended_budget {

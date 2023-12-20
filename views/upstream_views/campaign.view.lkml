@@ -175,9 +175,9 @@ view: campaign {
     sql: ${TABLE}.enhanced_cpv_enabled ;;
   }
 
-  dimension: external_customer_id {
+  dimension: customer_id {
     type: number
-    sql: ${TABLE}.external_customer_id ;;
+    sql: ${TABLE}.customer_id ;;
   }
 
   dimension: has_recommended_budget {
