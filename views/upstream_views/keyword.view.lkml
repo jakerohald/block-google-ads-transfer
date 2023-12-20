@@ -1,6 +1,6 @@
 view: keyword {
 
-  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.Keyword_@{GOOGLE_ADS_CUSTOMER_ID}`    ;;
+  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.@{GOOGLE_ADS_TABLE_PREFIX}Keyword_@{GOOGLE_ADS_CUSTOMER_ID}`    ;;
 
   dimension: primary_key {
     type: string

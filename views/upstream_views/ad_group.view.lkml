@@ -1,5 +1,5 @@
 view: ad_group {
-  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.AdGroup_@{GOOGLE_ADS_CUSTOMER_ID}`    ;;
+  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.@{GOOGLE_ADS_TABLE_PREFIX}AdGroup_@{GOOGLE_ADS_CUSTOMER_ID}`    ;;
 
 
   dimension_group: _data {

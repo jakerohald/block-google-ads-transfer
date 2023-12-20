@@ -1,5 +1,5 @@
 view: budget {
-  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.Budget_@{GOOGLE_ADS_CUSTOMER_ID}`
+  sql_table_name: `@{GOOGLE_ADS_SCHEMA}.@{GOOGLE_ADS_TABLE_PREFIX}Budget_@{GOOGLE_ADS_CUSTOMER_ID}`
     ;;
 
 dimension: prim_key {

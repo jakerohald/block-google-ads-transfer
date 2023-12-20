@@ -1,7 +1,7 @@
 include: /views/shared_views/*
 
 view: ad_basic_stats {
-  sql_table_name: (select *,GENERATE_UUID() as primary_key from `@{GOOGLE_ADS_SCHEMA}.AdBasicStats_@{GOOGLE_ADS_CUSTOMER_ID}`)    ;;
+  sql_table_name: (select *,GENERATE_UUID() as primary_key from `@{GOOGLE_ADS_SCHEMA}.@{GOOGLE_ADS_TABLE_PREFIX}AdBasicStats_@{GOOGLE_ADS_CUSTOMER_ID}`)    ;;
   extends: [ads_common,date_base,period_base]
 
   dimension: primary_key {
